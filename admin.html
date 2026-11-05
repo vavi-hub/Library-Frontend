@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibraryHub | Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+
+<header class="site-header">
+    <a href="admin.html" class="brand">LibraryHub</a>
+    <div class="profile">
+        <span>Librarian</span>
+        <div class="avatar">AD</div>
+    </div>
+</header>
+
+<nav class="site-nav">
+    <a href="admin.html" class="active">Dashboard</a>
+    <a href="#books">Books</a>
+    <a href="#members">Members</a>
+    <a href="#loans">Borrow / Returns</a>
+    <a href="#fines">Fines</a>
+</nav>
+
+<main class="page-content">
+
+    <section class="welcome-row">
+        <div>
+            <p class="eyebrow">LIBRARY ADMINISTRATION</p>
+            <h1>Welcome, Librarian!</h1>
+            <p class="muted">Manage your library from one place.</p>
+        </div>
+        <a href="#add-book" class="button button-primary">+ Add Book</a>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats-grid">
+
+        <article class="stat-card">
+            <p class="stat-label">Total Books</p>
+            <strong>1,250</strong>
+            <span class="stat-note">Books in inventory</span>
+        </article>
+
+        <article class="stat-card">
+            <p class="stat-label">Total Members</p>
+            <strong>320</strong>
+            <span class="stat-note">Registered members</span>
+        </article>
+
+        <article class="stat-card">
+            <p class="stat-label">Borrowed Books</p>
+            <strong>145</strong>
+            <span class="stat-note">Currently borrowed</span>
+        </article>
+
+        <article class="stat-card alert-card">
+            <p class="stat-label">Overdue Books</p>
+            <strong>12</strong>
+            <span class="stat-note">Require attention</span>
+        </article>
+
+    </section>
+
+    <!-- Main Dashboard -->
+    <section class="content-grid">
+
+        <article class="panel panel-wide" id="loans">
+            <div class="panel-heading">
+                <h2>Recent Borrowing Activity</h2>
+                <a href="#loans">View All</a>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Book</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Rahul Kumar</td>
+                            <td>Clean Code</td>
+                            <td>02 Nov 2026</td>
+                            <td><span class="badge warning">Due Soon</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ananya Singh</td>
+                            <td>Python Programming</td>
+                            <td>04 Nov 2026</td>
+                            <td><span class="badge success">On Track</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Rohit Sharma</td>
+                            <td>Database Concepts</td>
+                            <td>28 Oct 2026</td>
+                            <td><span class="badge danger">Overdue</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <article class="panel" id="books">
+            <h2>Book Availability</h2>
+
+            <div class="info-row">
+                <span>Available Books</span>
+                <strong>1,105</strong>
+            </div>
+
+            <div class="progress">
+                <span style="width:88%"></span>
+            </div>
+
+            <div class="info-row">
+                <span>Borrowed Books</span>
+                <strong>145</strong>
+            </div>
+
+            <div class="progress secondary">
+                <span style="width:12%"></span>
+            </div>
+        </article>
+
+        <article class="panel" id="members">
+            <h2>Quick Actions</h2>
+
+            <div class="action-list">
+                <a href="#add-book">+ Add New Book</a>
+                <a href="#members">+ Register Member</a>
+                <a href="#loans">↔ Issue / Return Book</a>
+                <a href="#fines">₹ Manage Fines</a>
+            </div>
+        </article>
+
+        <article class="panel panel-wide" id="fines">
+            <h2>Outstanding Fines</h2>
+            <div class="info-row">
+                <span>Pending Amount</span>
+                <strong>₹ 1,240.00</strong>
+            </div>
+            <span class="badge warning">8 Unpaid Fines</span>
+        </article>
+
+    </section>
+
+    <!-- Add Book Form -->
+    <section class="panel add-book" id="add-book">
+        <h2>Add New Book</h2>
+
+        <form class="book-form">
+            <input type="text" placeholder="Book Title">
+            <input type="text" placeholder="Author">
+            <input type="text" placeholder="Book Code">
+            <input type="number" placeholder="Total Copies">
+            <button type="button" class="button button-primary">
+                Save Book
+            </button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <span>© 2026 LibraryHub</span>
+    <span>Library Administration Portal</span>
+</footer>
+
+</body>
+</html>

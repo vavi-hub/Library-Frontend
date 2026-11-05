@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibraryHub | Member</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="member-page">
+
+<header class="site-header">
+    <a href="member.html" class="brand">LibraryHub</a>
+    <div class="profile">
+        <span>Member</span>
+        <div class="avatar">RK</div>
+    </div>
+</header>
+
+<nav class="site-nav">
+    <a href="member.html" class="active">Dashboard</a>
+    <a href="#catalogue">Browse Books</a>
+    <a href="#my-books">My Books</a>
+    <a href="#history">History</a>
+    <a href="#account">My Account</a>
+</nav>
+
+<main class="page-content">
+
+    <section class="welcome-row">
+        <div>
+            <p class="eyebrow">MEMBER PORTAL · MEM-2001</p>
+            <h1>Welcome Back, Rahul!</h1>
+            <p class="muted">Keep reading. Your next great book is waiting.</p>
+        </div>
+
+        <a href="#catalogue" class="button button-primary">
+            Explore Books
+        </a>
+    </section>
+
+    <!-- Member Statistics -->
+    <section class="stats-grid">
+
+        <article class="stat-card">
+            <p class="stat-label">Currently Borrowed</p>
+            <strong>2</strong>
+            <span class="stat-note">Books with you</span>
+        </article>
+
+        <article class="stat-card">
+            <p class="stat-label">Due This Week</p>
+            <strong>1</strong>
+            <span class="stat-note">Remember to return it</span>
+        </article>
+
+        <article class="stat-card">
+            <p class="stat-label">Books Returned</p>
+            <strong>18</strong>
+            <span class="stat-note">Your reading history</span>
+        </article>
+
+        <article class="stat-card">
+            <p class="stat-label">Outstanding Fine</p>
+            <strong>₹ 0</strong>
+            <span class="stat-note">You're all clear</span>
+        </article>
+
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-grid">
+
+        <article class="panel panel-wide" id="my-books">
+            <h2>Books You're Reading</h2>
+
+            <div class="loan-item">
+                <div class="book-cover blue">CC</div>
+                <div>
+                    <strong>Clean Code</strong>
+                    <p>Robert C. Martin</p>
+                    <span class="badge warning">Due: 02 Nov 2026</span>
+                </div>
+            </div>
+
+            <div class="loan-item">
+                <div class="book-cover green">PY</div>
+                <div>
+                    <strong>Python Programming</strong>
+                    <p>Mark Lutz</p>
+                    <span class="badge success">Due: 09 Nov 2026</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="panel" id="account">
+            <h2>My Account</h2>
+
+            <div class="info-row">
+                <span>Member ID</span>
+                <strong>MEM-2001</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Member Type</span>
+                <strong>Student</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Membership</span>
+                <strong>Active</strong>
+            </div>
+        </article>
+
+        <article class="panel panel-wide" id="catalogue">
+            <h2>Find Your Next Read</h2>
+
+            <div class="search-form">
+                <input type="search"
+                       placeholder="Search by title, author or book code">
+
+                <button class="button button-primary" type="button">
+                    Search
+                </button>
+            </div>
+
+            <div class="book-list">
+                <div>
+                    <strong>Database System Concepts</strong>
+                    <p>Abraham Silberschatz</p>
+                    <span class="badge success">Available</span>
+                </div>
+
+                <div>
+                    <strong>Introduction to Algorithms</strong>
+                    <p>Thomas H. Cormen</p>
+                    <span class="badge success">Available</span>
+                </div>
+
+                <div>
+                    <strong>Eloquent JavaScript</strong>
+                    <p>Marijn Haverbeke</p>
+                    <span class="badge warning">1 Copy Left</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="panel" id="history">
+            <h2>Recent Activity</h2>
+
+            <div class="action-list">
+                <p>✓ Returned The Pragmatic Programmer</p>
+                <p>↗ Borrowed Clean Code</p>
+                <p>✓ Returned Atomic Habits</p>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <span>© 2026 LibraryHub</span>
+    <span>Happy Reading, Rahul!</span>
+</footer>
+
+</body>
+</html>
